@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FoDS — Past Editions</title>
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      body {
+        font-family: Georgia, serif;
+        background-color: #f9f7f4;
+        color: #2c2c2c;
+      }
+
+      /* ── Header ── */
+      header {
+        background-color: #2c4a6e;
+        color: white;
+        text-align: center;
+        padding: 60px 20px 40px;
+      }
+      header h1 { font-size: 2.2em; margin-bottom: 10px; }
+      header p  { font-size: 1.05em; opacity: 0.8; }
+
+      /* ── Navigation ── */
+      nav {
+        background-color: #1a3450;
+        text-align: center;
+        padding: 13px;
+      }
+      nav a {
+        color: #cce0ff;
+        text-decoration: none;
+        margin: 0 20px;
+        font-size: 0.95em;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+      }
+      nav a:hover { color: white; }
+
+      /* ── Main ── */
+      main {
+        max-width: 820px;
+        margin: 55px auto;
+        padding: 0 20px;
+      }
+      h2 {
+        font-size: 1.4em;
+        color: #2c4a6e;
+        border-bottom: 2px solid #2c4a6e;
+        padding-bottom: 6px;
+        margin-bottom: 30px;
+      }
+
+      /* ── Edition list ── */
+      .edition-list {
+        list-style: none;
+        padding: 0;
+      }
+      .edition-list li {
+        display: flex;
+        align-items: baseline;
+        gap: 20px;
+        padding: 18px 0;
+        border-bottom: 1px solid #e0dbd4;
+      }
+      .edition-list li:last-child {
+        border-bottom: none;
+      }
+
+      /* Number badge */
+      .badge {
+        flex-shrink: 0;
+        background-color: #2c4a6e;
+        color: white;
+        font-size: 0.8em;
+        font-weight: bold;
+        letter-spacing: 0.04em;
+        padding: 4px 10px;
+        border-radius: 4px;
+        min-width: 62px;
+        text-align: center;
+      }
+
+      /* Text block */
+      .edition-info { flex: 1; }
+      .edition-info .where-when {
+        font-size: 1em;
+        line-height: 1.6;
+      }
+      .edition-info .note {
+        font-size: 0.88em;
+        color: #666;
+        margin-top: 3px;
+        font-style: italic;
+      }
+      .edition-info a {
+        display: inline-block;
+        margin-top: 5px;
+        font-size: 0.88em;
+        color: #2c4a6e;
+        text-decoration: none;
+        border-bottom: 1px solid #2c4a6e44;
+      }
+      .edition-info a:hover {
+        color: #1a3450;
+        border-bottom-color: #1a3450;
+      }
+
+      /* ── Footer ── */
+      footer {
+        text-align: center;
+        padding: 30px;
+        font-size: 0.85em;
+        color: #888;
+        border-top: 1px solid #ddd;
+        margin-top: 40px;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <header>
+      <h1>FoDS — Past Editions</h1>
+      <p>Previous meetings of the Formal Diachronic Semantics series</p>
+    </header>
+
+    <!-- NAVIGATION -->
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="../2026/index.html">FoDS 2026</a>
+      <a href="#">Past Editions</a>
+    </nav>
+
+    <main>
+      <h2>Previous Editions</h2>
+
+      <ul class="edition-list">
+
+        <li>
+          <span class="badge">FoDS 1</span>
+          <div class="edition-info">
+            <div class="where-when">University of Konstanz</div>
+            <div class="where-when">September 12–14, 2016</div>
+          </div>
+        </li>
+
+        <li>
+          <span class="badge">FoDS 2</span>
+          <div class="edition-info">
+            <div class="where-when">Saarland University</div>
+            <div class="where-when">November 20–21, 2017</div>
+            <a href="https://fods2.uni-saarland.de" target="_blank">fods2.uni-saarland.de</a>
+          </div>
+        </li>
+
+        <li>
+          <span class="badge">FoDS 3</span>
+          <div class="edition-info">
+            <div class="where-when">University of Oslo</div>
+            <div class="where-when">September 13–14, 2018</div>
+            <a href="http://www.lukasz-jedrzejowski.eu/conferences/FoDS3_schedule.pdf" target="_blank">Programme (PDF)</a>
+          </div>
+        </li>
+
+        <li>
+          <span class="badge">FoDS 4</span>
+          <div class="edition-info">
+            <div class="where-when">Ohio State University</div>
+            <div class="where-when">November 15–16, 2019</div>
+            <a href="https://u.osu.edu/fods4/" target="_blank">u.osu.edu/fods4</a>
+          </div>
+        </li>
+
+        <li>
+          <span class="badge">FoDS 5</span>
+          <div class="edition-info">
+            <div class="where-when">The Hebrew University of Jerusalem</div>
+            <div class="where-when">March 24–26, 2020</div>
+            <div class="note">Postponed to January 20–21, 2021</div>
+            <a href="https://languagechangeconfjlm.wordpress.com/2020-conference-program/" target="_blank">Conference programme</a>
+          </div>
+        </li>
+
+        <li>
+          <span class="badge">FoDS 6</span>
+          <div class="edition-info">
+            <div class="where-when">University of Cologne</div>
+            <div class="where-when">September 6–7, 2021</div>
+            <a href="http://www.lukasz-jedrzejowski.eu/formal-diachronic-semantics-6/" target="_blank">Conference website</a>
+          </div>
+        </li>
+
+        <li>
+          <span class="badge">FoDS 7</span>
+          <div class="edition-info">
+            <div class="where-when">University of Budapest</div>
+            <div class="where-when">November 10–11, 2022</div>
+            <a href="http://archive.nytud.hu/fods7/" target="_blank">archive.nytud.hu/fods7</a>
+          </div>
+        </li>
+
+        <li>
+          <span class="badge">FoDS 8</span>
+          <div class="edition-info">
+            <div class="where-when">CNRS-IKER, Bayonne</div>
+            <div class="where-when">September 28–29, 2023</div>
+            <a href="https://sites.google.com/view/fods8/program" target="_blank">Conference programme</a>
+          </div>
+        </li>
+
+                <li>
+          <span class="badge">FoDS 9</span>
+          <div class="edition-info">
+            <div class="where-when">University of Bologna</div>
+            <div class="where-when">November 28–29, 2024</div>
+            <a href="https://eventi.unibo.it/fods-formal-diachronic-semantics-9" target="_blank">Conference website</a>
+          </div>
+        </li>
+
+      </ul>
+    </main>
+
+    <footer>
+      <p>© 2026 FoDS — Formal Diachronic Semantics</p>
+    </footer>
+
+  </body>
+</html>
