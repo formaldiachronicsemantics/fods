@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FoDS 10 — 2026</title>
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      body {
+        font-family: Georgia, serif;
+        background-color: #f9f7f4;
+        color: #2c2c2c;
+      }
+
+      /* ── Header ── */
+      header {
+        background-color: #2c4a6e;
+        color: white;
+        text-align: center;
+        padding: 60px 20px 40px;
+      }
+      header h1 { font-size: 2.2em; margin-bottom: 10px; }
+      header .subtitle { font-size: 1.05em; opacity: 0.8; margin-bottom: 6px; }
+      header .dates   { font-size: 1em; opacity: 0.7; }
+
+      /* ── Navigation ── */
+      nav {
+        background-color: #1a3450;
+        text-align: center;
+        padding: 13px;
+      }
+      nav a {
+        color: #cce0ff;
+        text-decoration: none;
+        margin: 0 20px;
+        font-size: 0.95em;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+      }
+      nav a:hover { color: white; }
+
+      /* ── Main ── */
+      main {
+        max-width: 820px;
+        margin: 55px auto;
+        padding: 0 20px;
+      }
+      section { margin-bottom: 55px; }
+      h2 {
+        font-size: 1.4em;
+        color: #2c4a6e;
+        border-bottom: 2px solid #2c4a6e;
+        padding-bottom: 6px;
+        margin-bottom: 18px;
+      }
+      p { line-height: 1.8; font-size: 1em; margin-bottom: 12px; }
+
+      /* ── Info boxes ── */
+      .info-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        margin-top: 10px;
+      }
+      .info-box {
+        background: #2c4a6e;
+        color: white;
+        border-radius: 6px;
+        padding: 16px 24px;
+        font-size: 0.95em;
+        min-width: 180px;
+      }
+      .info-box strong {
+        display: block;
+        font-size: 0.8em;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        opacity: 0.75;
+        margin-bottom: 5px;
+      }
+
+      /* ── Invited speakers ── */
+      .speaker-list {
+        list-style: none;
+        padding: 0;
+      }
+      .speaker-list li {
+        padding: 10px 0;
+        border-bottom: 1px solid #e0dbd4;
+        font-size: 0.98em;
+      }
+      .speaker-list li:last-child { border-bottom: none; }
+      .speaker-list .affiliation {
+        font-size: 0.88em;
+        color: #666;
+        margin-top: 2px;
+      }
+
+      /* ── Important dates ── */
+      .dates-table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 0.97em;
+      }
+      .dates-table tr {
+        border-bottom: 1px solid #e0dbd4;
+      }
+      .dates-table tr:last-child { border-bottom: none; }
+      .dates-table td {
+        padding: 10px 6px;
+        vertical-align: top;
+      }
+      .dates-table td:first-child {
+        color: #2c4a6e;
+        font-weight: bold;
+        white-space: nowrap;
+        width: 200px;
+      }
+      .passed {
+        text-decoration: line-through;
+        opacity: 0.5;
+      }
+
+      /* ── Call for papers ── */
+      .cta-box {
+        background: #eef3f9;
+        border-left: 4px solid #2c4a6e;
+        padding: 20px 24px;
+        border-radius: 0 6px 6px 0;
+        margin-top: 10px;
+      }
+      .cta-box p { margin-bottom: 8px; }
+      .cta-box a {
+        display: inline-block;
+        margin-top: 8px;
+        background: #2c4a6e;
+        color: white;
+        padding: 9px 20px;
+        border-radius: 4px;
+        text-decoration: none;
+        font-size: 0.92em;
+      }
+      .cta-box a:hover { background: #1a3450; }
+
+      /* ── Organizers ── */
+      .organizer-list {
+        list-style: none;
+        padding: 0;
+      }
+      .organizer-list li {
+        padding: 6px 0;
+        border-bottom: 1px solid #e0dbd4;
+        font-size: 0.98em;
+      }
+      .organizer-list li:last-child { border-bottom: none; }
+
+      /* ── Footer ── */
+      footer {
+        text-align: center;
+        padding: 30px;
+        font-size: 0.85em;
+        color: #888;
+        border-top: 1px solid #ddd;
+        margin-top: 40px;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <header>
+      <h1>FoDS 10</h1>
+      <p class="subtitle">Formal Diachronic Semantics — 10th Edition</p>
+      <p class="subtitle">University / Institution name · City, Country</p>
+      <p class="dates">Day–Day Month 2026</p>
+    </header>
+
+    <!-- NAVIGATION -->
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="#welcome">Welcome</a>
+      <a href="#speakers">Speakers</a>
+      <a href="#cfp">Call for Papers</a>
+      <a href="#program">Program</a>
+      <a href="#venue">Venue</a>
+      <a href="#organizers">Organizers</a>
+    </nav>
+
+    <main>
+
+      <!-- Welcome -->
+      <section id="welcome">
+        <h2>Welcome</h2>
+        <p>
+          Write your welcome message here — what this edition focuses on,
+          what makes it special, any particular themes.
+        </p>
+      </section>
+
+      <!-- Date & Venue -->
+      <section id="venue">
+        <h2>Date &amp; Venue</h2>
+        <div class="info-row">
+          <div class="info-box">
+            <strong>Dates</strong>
+            Day–Day Month 2026
+          </div>
+          <div class="info-box">
+            <strong>City</strong>
+            City, Country
+          </div>
+          <div class="info-box">
+            <strong>Venue</strong>
+            Building / Department name
+          </div>
+          <div class="info-box">
+            <strong>Room</strong>
+            Room name or number
+          </div>
+        </div>
+      </section>
+
+      <!-- Invited Speakers -->
+      <section id="speakers">
+        <h2>Invited Speakers</h2>
+        <ul class="speaker-list">
+          <li>
+            Name Surname
+            <div class="affiliation">Institution</div>
+          </li>
+          <li>
+            Name Surname
+            <div class="affiliation">Institution</div>
+          </li>
+          <li>
+            Name Surname
+            <div class="affiliation">Institution</div>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Call for Papers -->
+      <section id="cfp">
+        <h2>Call for Papers</h2>
+        <div class="cta-box">
+          <p>Write a short description of the call — topics of interest,
+          submission format, length requirements.</p>
+          <a href="mailto:your@email.com">Submit an abstract</a>
+        </div>
+      </section>
+
+      <!-- Important Dates -->
+      <section id="dates">
+        <h2>Important Dates</h2>
+        <table class="dates-table">
+          <tr>
+            <td>Abstract submission</td>
+            <td>Day Month 2026</td>
+          </tr>
+          <tr>
+            <td>Notification</td>
+            <td>Day Month 2026</td>
+          </tr>
+          <tr>
+            <td>Conference</td>
+            <td>Day–Day Month 2026</td>
+          </tr>
+        </table>
+      </section>
+
+      <!-- Program -->
+      <section id="program">
+        <h2>Program</h2>
+        <p>The program will be announced soon.</p>
+      </section>
+
+      <!-- Organizers -->
+      <section id="organizers">
+        <h2>Organizers</h2>
+        <ul class="organizer-list">
+          <li>Name Surname — Institution</li>
+          <li>Name Surname — Institution</li>
+          <li>Name Surname — Institution</li>
+        </ul>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>For enquiries: <a href="mailto:your@email.com">your@email.com</a></p>
+      </section>
+
+    </main>
+
+    <footer>
+      <p>© 2026 FoDS — Formal Diachronic Semantics</p>
+    </footer>
+
+  </body>
+</html>
