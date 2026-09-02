@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FoDS - Formal Diachronic Semantics</title>
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      body {
+        font-family: Georgia, serif;
+        background-color: #f9f7f4;
+        color: #2c2c2c;
+      }
+
+      /* ── Header ── */
+      header {
+        background-color: #2c4a6e;
+        color: white;
+        text-align: center;
+        padding: 70px 20px 50px;
+      }
+      header h1 { font-size: 2.6em; margin-bottom: 14px; }
+      header p  { font-size: 1.15em; opacity: 0.85; max-width: 680px; margin: 0 auto; }
+
+      /* ── Navigation ── */
+      nav {
+        background-color: #1a3450;
+        text-align: center;
+        padding: 13px;
+      }
+      nav a {
+        color: #cce0ff;
+        text-decoration: none;
+        margin: 0 20px;
+        font-size: 0.95em;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+      }
+      nav a:hover { color: white; }
+
+      /* ── Main content ── */
+      main {
+        max-width: 820px;
+        margin: 55px auto;
+        padding: 0 20px;
+      }
+      section { margin-bottom: 55px; }
+      h2 {
+        font-size: 1.4em;
+        color: #2c4a6e;
+        border-bottom: 2px solid #2c4a6e;
+        padding-bottom: 6px;
+        margin-bottom: 18px;
+      }
+      p { line-height: 1.8; font-size: 1em; margin-bottom: 12px; }
+
+      /* ── Edition cards ── */
+      .card-row {
+        display: flex;
+        gap: 24px;
+        flex-wrap: wrap;
+        margin-top: 10px;
+      }
+      .card {
+        flex: 1;
+        min-width: 220px;
+        background: #2c4a6e;
+        color: white;
+        border-radius: 8px;
+        padding: 28px 24px;
+        text-decoration: none;
+        transition: background 0.2s;
+      }
+      .card:hover { background: #1a3450; }
+      .card .label {
+        font-size: 0.8em;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        opacity: 0.75;
+        margin-bottom: 8px;
+      }
+      .card h3 { font-size: 1.25em; margin-bottom: 6px; }
+      .card p  { font-size: 0.9em; opacity: 0.85; margin: 0; }
+
+      /* ── Organizers ── */
+      .organizer-list {
+        list-style: none;
+        padding: 0;
+      }
+      .organizer-list li {
+        padding: 6px 0;
+        border-bottom: 1px solid #e0dbd4;
+        font-size: 0.98em;
+      }
+
+      /* ── Footer ── */
+      footer {
+        text-align: center;
+        padding: 30px;
+        font-size: 0.85em;
+        color: #888;
+        border-top: 1px solid #ddd;
+        margin-top: 40px;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <header>
+      <h1>FoDS – Formal Diachronic Semantics</h1>
+      <p>A conference series dedicated to theoretical perspectives on meaning change</p>
+    </header>
+
+    <!-- NAVIGATION -->
+    <nav>
+      <a href="#about">About</a>
+      <a href="#editions">Editions</a>
+      <a href="#organizers">Organizers</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+
+      <!-- About / Aims & Scope -->
+      <section id="about">
+        <h2>About the Series</h2>
+        <p>
+          FoDS – Formal Diachronic Semantics brings together scholars interested in the exploration of the semantic and pragmatic aspects of diachronic processes in natural languages from a formal perspective.
+        </p>
+        <p>
+          FoDS has been meeting yearly since 2016. The next conference will take place at the University of Konstanz on March 18-19, 2027.
+        </p>
+      </section>
+
+      <!-- Editions -->
+      <section id="editions">
+        <h2>Editions</h2>
+        <div class="card-row">
+
+          <!-- Link to current edition -->
+          <a class="card" href="2026/index.html">
+            <div class="label">Current edition</div>
+            <h3>2026 — City</h3>
+            <p>Institution name · Month Year</p>
+          </a>
+
+          <!-- Link to past editions -->
+          <a class="card" href="past-editions.html">
+            <div class="label">Archive</div>
+            <h3>Past Editions</h3>
+            <p>Browse previous meetings of the series</p>
+          </a>
+
+        </div>
+      </section>
+
+      <!-- Organizers / Steering committee -->
+      <section id="organizers">
+        <h2>Steering Committee</h2>
+        <ul class="organizer-list">
+          <li>Name Surname — Institution</li>
+          <li>Name Surname — Institution</li>
+          <li>Name Surname — Institution</li>
+        </ul>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>
+          For general enquiries about the series:
+          <a href="mailto:formaldiachronicsemantics@outlook.com">formaldiachronicsemantics@outlook.com</a>
+        </p>
+      </section>
+
+    </main>
+
+    <footer>
+      <p>© 2026 FoDS</p>
+    </footer>
+
+  </body>
+</html>
