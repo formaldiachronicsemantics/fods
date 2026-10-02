@@ -13,6 +13,7 @@
       }
 
       /* ── Header ── */
+      /* ── Header ── */
       header {
         background-color: #2c4a6e;
         color: white;
@@ -22,7 +23,6 @@
       header h1 { font-size: 2.2em; margin-bottom: 10px; }
       header .subtitle { font-size: 1.05em; opacity: 0.8; margin-bottom: 6px; }
       header .dates   { font-size: 1em; opacity: 0.7; }
-
       /* ── Navigation ── */
       nav {
         background-color: #1a3450;
@@ -163,6 +163,49 @@
         border-top: 1px solid #ddd;
         margin-top: 40px;
       }
+      /* ── Edition cards ── */
+      .card-row {
+        display: flex;
+        gap: 24px;
+        flex-wrap: wrap;
+        margin-top: 10px;
+      }
+      .card {
+        flex: 0 1 300px;
+        min-width: 220px;
+        min-width: 220px;
+        background: #2c4a6e;
+        color: white;
+        border-radius: 8px;
+        padding: 28px 24px;
+        text-decoration: none;
+        transition: background 0.2s;
+      }
+      .card:hover { background: #1a3450; }
+      .card .label {
+        font-size: 0.8em;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        opacity: 0.75;
+        margin-bottom: 8px;
+      }
+      .card h3 { font-size: 1.25em; margin-bottom: 6px; }
+      .card p  { font-size: 0.9em; opacity: 0.85; margin: 0; }
+      .header-logo-1 {
+      width: 120px;      
+      height: auto;      
+      border-radius: 8px;
+    }
+    .header-logo-2 {
+      width: 70px;      
+      height: auto;      
+      border-radius: 8px;
+    }
+    .header-logo-3 {
+      width: 100px;      
+      height: auto;      
+      border-radius: 8px;
+    }
     </style>
   </head>
 
@@ -177,27 +220,20 @@
     </header>
 
     <!-- NAVIGATION -->
-    <nav>
-      <a href="https://formaldiachronicsemantics.github.io/fods/index.html">Home</a>
-      <a href="#welcome">Call for papers</a>
-      <a href="#speakers"> Invited Speakers</a>
-      <a href="#cfp">Important dates</a>
-      <a href="#program">Program</a>
-      <a href="#venue">Venue</a>
-      <a href="#organizers">Organizers</a>
+     <nav>
+      <a href="/home/timofei/fods_conference/_site/index.html">Home</a>
+      <a href="/home/timofei/fods_conference/_site/call_for_papers.html">Call for papers</a>
+      <a href="/home/timofei/fods_conference/_site/program.html">Program</a>
+      <a href="/home/timofei/fods_conference/_site/practical.html">Practical information</a>
+      <a href="/home/timofei/fods_conference/_site/contacts.html">Contacts</a>
     </nav>
 
     <main>
-
-      <!-- Welcome -->
-      <section id="welcome">
         <h2>Call for papers</h2>
         <p>
           We are pleased to announce the call for papers for the workshop Formal Diachronic Semantics – FoDS 10, to take place on March 18 – 19, 2027, at the University of Konstanz. 
-          Submissions can be made via <a href="https://openreview.net" target="_blank">OpenReview</a>.</p>
+          Submissions can be made via <a href="https://openreview.net/group?id=uni-konstanz.de/Universit%C3%A4t_Konstanz/2027/FoDS#tab-recent-activity" target="_blank">OpenReview</a>.</p>
           
-<p>The meeting <i>Formal Diachronic Semantics</i> brings together research on meaning change in natural language and its origins, and effects on pragmatics and semantics, and their interfaces with morphosyntax and prosody. Special attention is given to studies that are related to formal accounts of semantics and grammar, providing new insights into language specific as well as universal patterns in language.</p> 
-        
         <p>We invite submission of abstracts for 30-minute oral presentations (with an additional 10 minutes for questions) or poster presentations on topics addressing semantic change from within the paradigm of formal semantics/pragmatics. These may include case studies, studies of trends, corpus results, as well as formal theories of meaning change in specific domains.
 We also welcome research at the interfaces with syntax and other areas, as long as the research contributes to the area of formal diachronic semantics. We welcome papers that
 address methodological questions in the field. Submissions are limited to one individual and one joint abstract per author (or two joint abstracts per author).</p>
@@ -206,120 +242,22 @@ address methodological questions in the field. Submissions are limited to one in
 
           <p>A special session of the conference will be held in memory of Remus Gergel.
         </p>
-      </section>
-
-      <!-- Date & Venue -->
-      <section id="venue">
-        <h2>Date &amp; Venue</h2>
-        <div class="info-row">
-          <div class="info-box">
-            <strong>Dates</strong>
-            18–19 March 2027
-          </div>
-          <div class="info-box">
-            <strong>City</strong>
-            Konstanz, Germany
-          </div>
-          <div class="info-box">
-            <strong>Venue</strong>
-            Department of Linguistics
-          </div>
-          <div class="info-box">
-            <strong>Room</strong>
-            TBA
-          </div>
-        </div>
-      </section>
-
-      <!-- Invited Speakers -->
-      <section id="speakers">
-        <h2>Invited Speakers</h2>
-        <p> We look forward to three invited speakers who confirmed their participation in the conference and the workshop:</p>
-        <ul class="speaker-list">
-          <li>
-            Aynat Rubinstein
-            <div style="display: none;"><div class="affiliation">Institution</div></div>
-          </li>
-          <li>
-            Tam&aacutes Halm
-            <div style="display: none;"><div class="affiliation">Institution</div></div>
-          </li>
-          <li>
-            Anne Breitbarth
-            <div style="display: none;"><div class="affiliation">Institution</div></div>
-          </li>
-        </ul>
-      </section>
-
-      <!-- Call for Papers -->
-      <section id="cfp">
-        <h2>Abstract submission</h2>
+       <h2>Abstract submission</h2>
         <div class="cta-box">
           <p>November 5nd: Deadline for submission of abstracts. Abstracts must be anonymous, in PDF
 format, 2 pages (A4 or letter), in a font size no less than 12pt, and with margins of 1
 inch/2.5cm. Note that submission requires an OpenReview account, which you should set up
 some time in advance.</p>
-          <a href="https://openreview.net">Submit an abstract</a>
+          <a href="https://openreview.net/group?id=uni-konstanz.de/Universit%C3%A4t_Konstanz/2027/FoDS#tab-recent-activity">Submit an abstract</a>
         </div>
-      </section>
-
-      <!-- Important Dates -->
-      <section id="dates">
-        <h2>Important Dates</h2>
-        <table class="dates-table">
-          <tr>
-            <td>Abstract submission</td>
-            <td>November 5, 2026</td>
-          </tr>
-          <tr>
-            <td>Notification</td>
-            <td>December 5, 2026</td>
-          </tr>
-          <tr>
-            <td>Decision on the final program</td>
-            <td>December 12, 2026</td>
-          </tr>
-          <tr>
-            <td>Main Conference</td>
-            <td>March 18-19, 2027</td>
-          </tr>
-          <tr>
-            <td>Workshop <i>Noise in Language Change</i></td>
-            <td>March 17, 2027</td>
-          </tr>
-
-    
-        </table>
-      </section>
-
-      <!-- Program -->
-      <section id="program">
-        <h2>Program</h2>
-        <p>The program will be announced in December.</p>
-      </section>
-
-      <!-- Organizers -->
-      <section id="organizers">
-        <h2>Organizers</h2>
-        <ul class="organizer-list">
-          <li>Regine Eckardt — University of Konstanz</li>
-          <li>George Walkden — University of Konstanz</li>
-          <li>Katrin Axel-Tober — University of T&uumlbingen</li>
-          <li>Sigrid Beck — University of T&uumlbingen</li>
-        </ul>
-      </section>
-
-      <!-- Contact -->
-      <section id="contact">
-        <h2>Contact</h2>
-        <p>For questions, please contact Regine Eckardt <a href="mailto:regine.eckardt@uni-konstanz.de">regine.eckardt@uni-konstanz.de</a></p>
-      </section>
-
     </main>
 
     <footer>
-      <p>© 2026 FoDS — Formal Diachronic Semantics</p>
+      <img src="/home/timofei/fods_conference/_site/sfb.jpg"  class="header-logo-3">
+      <img src="/home/timofei/fods_conference/_site/logotub.jpeg"  class="header-logo-2">
+      <img src="/home/timofei/fods_conference/_site/logo.png"  class="header-logo-1">
+      <p>© 2027 FoDS — Formal Diachronic Semantics</p>
     </footer>
 
   </body>
-</html>
+</html>        
