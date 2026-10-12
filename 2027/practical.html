@@ -102,6 +102,13 @@
         border-collapse: collapse;
         font-size: 0.97em;
       }
+      .dates-table thead th {
+        color: #2c4a6e;
+        text-align: left;
+        font-weight: bold;
+        border-bottom: 2px solid #2c4a6e; /* Толщина, стиль (сплошная) и цвет линии */
+      
+      }
       .dates-table tr {
         border-bottom: 1px solid #e0dbd4;
       }
@@ -206,6 +213,36 @@
       height: auto;      
       border-radius: 8px;
     }
+    .pictures_k {
+      width: 500px;      
+      height: auto;      
+      border-radius: 8px;
+    }
+    .image-container {
+    display: flex;
+    gap: 10px; 
+    align-items: center; 
+    }
+  .img-1 {
+    max-width: 50%;
+    height: auto;
+    }
+  .img-2 {
+    max-width: 25%;
+    height: auto;
+    }
+  .img-3 {
+    max-width: 70%;
+    height: auto;
+    }
+  .img-4 {
+    max-width: 68%;
+    height: auto;
+    }
+  .img-5 {
+    max-width: 32%;
+    height: auto;
+    }
     </style>
   </head>
 
@@ -216,7 +253,7 @@
       <h1>FoDS 10</h1>
       <p class="subtitle">Formal Diachronic Semantics — 10th Edition</p>
       <p class="subtitle">University of Konstanz and University of T&uumlbingen · Konstanz, Germany</p>
-      <p class="dates">17–19 March 2027</p>
+      <p class="dates">18–19 March 2027</p>
     </header>
 
     <!-- NAVIGATION -->
@@ -229,12 +266,127 @@
     </nav>
 
     <main>
-       <h2>Practical information</h2>
-        <p> On this page would appear some practical information about accomodation in Konstanz, best cafes and reastaraunts, etc. Please wait for the details!</p>
+       <h2>Accomodation</h2>
+        <table class="dates-table">
+          <thead>
+            <tr>
+              <th>Hotel</th>
+              <th>Info</th>
+              <th>Public Transport to University</th>
+            </tr>
+          </thead>
+          <tr>
+            <td>Hotel Alte Post (Dammgasse 2, 78462 Konstanz)</td>
+            <td>Info: Located in Old Town, right next to Konstanz main station, very central, walking
+distance to Lake Constance (harbor).</td>
+            <td>Public Transport to University (approx. 20 minutes): Bus line 9 (from bus
+stop Bahnhof Konstanz).</td>
+          </tr>
+          <tr>
+            <td>Hotel Halm Konstanz (Bahnhofpl. 6, 78462 Konstanz)</td>
+            <td>Info: Located in Old Town, right next to Konstanz main station, very central, walking
+distance to Lake Constance (harbor).</td>
+            <td>Public Transport to University (approx. 20 minutes): Bus line 9 (from bus
+stop Bahnhof Konstanz).</td>
+          </tr>
+          <tr>
+            <td>Ibis Hotel Konstanz (Benediktinerpl. 9, 78467 Konstanz)</td>
+            <td>Info: Located in Konstanz-Petershausen, 1.5 km from the main station, very central,
+walking distance to Lake Constance (harbor).</td>
+            <td>Public Transport to University (approx. 15 minutes): Bus line 9 (from bus
+stop Sternenplatz Konstanz).</td>
+          </tr>
+          <tr>
+            <td>B&B Hotel Konstanz (Line-Eid-Straße 2, 78467 Konstanz)</td>
+            <td>Info: Located in Konstanz-Fürstenberg, 3 km from the main station, slightly outside
+the city center, walking distance to the Seerhein (a 4 km section of the Rhine River in
+Lake Constance).</td>
+            <td>Public Transport to University (approx. 30 minutes): Bus line 6 (from bus
+stop Stromeyersdorf Konstanz) and change to bus line 9 (at bus stop Sternenplatz
+Konstanz).</td>
+          </tr>
+
+        
+        </table>
+        <div style="height: 50px;"></div>
+        <h2>Arrival to the University</h2>
+        <p>Two closest airports are in Stuttgart (with a train ride of about 3,5 hours to Konstanz) and Zürich (with a train ride of about 2 hours to Konstanz)</p>
+        <p> Once you are in Konstanz, you can reach the University by bus. Bus line 9 runs about every 15 minutes from Konstanz main station to the
+university. The ride takes about 20 minutes. You might also use bus line 13/4 to the “Universität/Egg” station or bus line 6, depending on your location.</p> 
+        <p>If you go by car, the University has two large parking lots at the University (Parking Area Nort and South). </p>
+        <p>Tip: With the "KonRad" bicycle rental system, you can easily rent a bike at many rental stations in Konstanz. 60 minutes cost €2.50 and a day costs €10. For more information, check
+the website: https://www.stadtwerke-konstanz.de/fahrrad/fahrradmietsystem/</p>
+<div class="image-container">
+  <img src="IMG_2099.JPG" class="img-3">
+  <img src="IMG_2100.JPG" class="img-2">
+</div>
+<div style="height: 50px;"></div>
+        <h2>Restaurants</h2>
+        <table class="dates-table">
+          <tr>
+            <td>Constanzer Wirtshaus (Spanierstr. 3, 78467 Konstanz)</td>
+            <td>Traditional German food, some vegetarian and vegan options</td>
+          </tr>
+          <tr>
+            <td>Good Rice zum Elefanten (Salmannsweilergasse 34, 78462 Konstanz)</td>
+            <td>Vietnamese food, several vegetarian options</td>
+          </tr>
+          <tr>
+            <td>Restaurant Le Cèdre (Winterersteig 23, 78462 Konstanz)</td>
+            <td>Lebanese food, several vegetarian and vegan options</td>
+          </tr>
+        </table>
+      <div style="height: 50px;"></div>
+      <h2>Cafes</h2>
+        <table class="dates-table">
+          <tr>
+            <td>Das Voglhaus (Wessenbergstr. 8, 78462 Konstanz)</td>
+            <td>Savory and sweet snacks, breakfast; vegan, lactose-free, and gluten-free options available</td>
+          </tr>
+          <tr>
+            <td>Heinrich Konstanz (Zollernstrasse 26, 78462 Konstanz)</td>
+            <td>Savory and sweet snacks, breakfast, hot dishes; vegan options available</td>
+          </tr>
+          <tr>
+            <td>Café Helga (Hohenhausgasse 1, 78462 Konstanz)</td>
+            <td>Savory and sweet snacks, breakfast; vegan options available</td>
+          </tr>
+        </table>
+      <div style="height: 50px;"></div>
+      <h2>Sightseeing</h2>
+        <table class="dates-table">
+          <tr>
+            <td>Lake Constance (Bodensee)</td>
+            <td>You may want to visit Konstanz Harbor (close to Konstanz main station, featuring the Imperia statue and
+optional boat tours) or the Seerhein (a 4 km section of the Rhine River between the old town of Konstanz
+and Konstanz-Petershausen)</td>
+          </tr>
+          <tr>
+            <td>Insel Mainau</td>
+            <td>A small private island with beautiful flower beds, trees, and nice walking paths.
+Located near the university. Day tickets cost between €15 and €30 depending on the
+season.</td>
+          </tr>
+          <tr>
+            <td>Insel Reichenau</td>
+            <td>An inhabited island with three historic churches and nice walking paths.
+Located near Konstanz-Wollmatingen. Free admission.</td>
+          </tr>
+          <tr>
+            <td>Konstanzer Münster (Cathedral)</td>
+            <td>A historic basilica in the old town of Konstanz (Münsterplatz 1), 78 meters high.</td>
+          </tr>
+        </table> 
+        <div style="margin-top: 60px;">
+          <div class="image-container">
+            <img src="kons_lake.jpg" class="img-1">
+            <img src="IMG_2101.JPG" class="img-1">
+          </div>
         </div>
-       <div style="margin-top: 60px;">
-        <img src="snail.jpg">
-        </div> 
+        <div class="image-container">
+          <img src="ronile-rotating-figure-278263.jpg" class="img-5">
+          <img src="15147632-water-6105381.jpg" class="img-4">
+        </div>
     </main>
 
     <footer>
